@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+@media screen and (min-width:600px) and (max-width:900px) {
+
+    :root{
+
+        --font01: 'Orbitron', sans-serif;
+        --font02: 'Poppins', sans-serif;
+        --font03:  Arial, Helvetica, sans-serif;
+    
+        --cor01: #AA4330;
+        --cor02:#2C3033;
+        --cor03:#545F63;
+        --cor04:#b6cbd2;
+        --cor05:#ea9d90a5;
+    }
+
+
+   body{
+    background-image: linear-gradient(to top, var(--cor01),  var(--cor03), var(--cor02) 65%);
+   }
+    
+    main{
+    height: 307px;
+    width: 570px;
+    }
+
+    img{
+        display: inline;
+        border-radius: 20px 0px 0px 20px;
+        border-right: 2px solid var(--cor01);
+        border-bottom: 0px solid var(--cor01);
+    }
+    
+    section{
+        position: relative;
+
+        top: -310px;
+        right: -248px;
+        
+        width: 300px;
+        height: 276px;
+    
+        border-radius: 0px 20px 20px 0px;
+    }
+
+    form div{
+        margin-top: 10px;
+        padding: 10px 15px 10px 15px;
+    }
+
+    form div>input{
+        position: absolute;
+        height: 40px;
+        width: 244px;
+        left: 60px;  
+        font-size: 1.3em;    
+    }
+    
+    div.icone-email>input{
+        top:100px;
+    }    
+    
+    div.icone-senha>input{
+        top:156px;
+    }
+
+    p.enviar{
+        margin-top: 15px;
+    }
+    
+    p.esqueci{
+        margin-top: 8px;
+    }
+    
+    p>input{
+        width: 300px;
+        height: 35px;
+    }
+    
+}
+
+@media screen and (min-width:901px) {
+
+  body{
+    background-image: linear-gradient(to top, var(--cor01),  var(--cor03), var(--cor02) 65%);
+    font-size: 1.2em;
+   }
+    
+    main{
+    height: 315px;
+    width:700px;
+    }
+
+    div.img{
+        display: none;
+    }
+
+    div.img2{
+        display: block;
+    }
+
+    div.img2>img{
+        width: 277px;
+        height: 313px;
+    }
+
+    div.img2{
+        width: 700px;
+        height: 100px;
+    }
+        
+    img{
+        display: relative;
+        left: 211px;
+        top: -313px;
+
+        border-radius: 0px 20px 20px 0px;
+        border-left: 2px solid var(--cor01);
+        border-bottom: 0px solid var(--cor01);
+    }
+    
+    section{
+        position: inline;
+    
+        width: 400px;
+        height: 284px;
+    
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    form div{
+        margin-top: 10px;
+        padding: 10px 15px 10px 15px;
+    }
+
+    form div>input{
+        height: 40px;
+        width: 342px;
+        left: 60px;  
+        font-size: 1.3em;    
+    }
+    
+    div.icone-email>input{
+        top:114px;
+    }    
+    
+    div.icone-senha>input{
+        top:172px;
+    }
+
+    p.enviar{
+        margin-top: 10px;
+    }
+    
+    p.esqueci{
+        margin-top: 6px;
+    }
+    
+    p>input{
+        width: 400px;
+        height: 35px;
+    }
+    
+}
+
