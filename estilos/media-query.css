@@ -1,197 +1,103 @@
 @charset "UTF-8";
 
-@media screen and (min-width:600px) and (max-width:900px) {
-
-    :root{
-
-        --font01: 'Orbitron', sans-serif;
-        --font02: 'Poppins', sans-serif;
-        --font03:  Arial, Helvetica, sans-serif;
+*{
+    margin: 0px;
+    padding: 0px;
     
-        --cor01: #AA4330;
-        --cor02:#2C3033;
-        --cor03:#545F63;
-        --cor04:#b6cbd2;
-        --cor05:#ea9d90a5;
-    }
+}
+:root{
+    --font01: 'Orbitron', sans-serif;
+    --font02: 'Poppins', sans-serif;
+    --font03:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
+    --cor01: #AA4330;
+    --cor02:#2C3033;
+    --cor03:#545F63;
+    --cor04:#b6cbd2;
+    --cor05:#ea9d90a5;
+}
 
-   body{
-    background: linear-gradient(253deg, var(--cor02), var(--cor01));
+@media screen and (min-width:768px){
+    
+    body {
+    background: linear-gradient(253deg, var(--cor04), var(--cor02), var(--cor01));
     background-size: 300% 300%;
     -webkit-animation: Background 25s ease infinite;
     -moz-animation: Background 25s ease infinite;
     animation: Background 25s ease infinite;
-   }
+    }
     
     @-webkit-keyframes Background {
-        0% {
+    0% {
         background-position: 0% 50%
-        }
-        50% {
+    }
+    50% {
         background-position: 100% 50%
-        }
-        100% {
+    }
+    100% {
         background-position: 0% 50%
-        }
     }
-      
-    main{
-    height: 307px;
-    width: 570px;
-    }
-
-    img{
-        display: inline;
-        border-radius: 20px 0px 0px 20px;
-        border-right: 2px solid var(--cor01);
-        border-bottom: 0px solid var(--cor01);
     }
     
-    section{
-        position: relative;
-
-        top: -310px;
-        right: -248px;
-        
-        width: 300px;
-        height: 276px;
-    
-        border-radius: 0px 20px 20px 0px;
+    @-moz-keyframes Background {
+    0% {
+        background-position: 0% 50%
     }
-
-    form div{
-        margin-top: 10px;
-        padding: 10px 15px 10px 15px;
+    50% {
+        background-position: 100% 50%
     }
-
-    form div>input{
-        position: absolute;
-        height: 40px;
-        width: 244px;
-        left: 60px;  
-        font-size: 1.3em;    
+    100% {
+        background-position: 0% 50%
+    }
     }
     
-    div.icone-email>input{
-        top:100px;
-    }    
-    
-    div.icone-senha>input{
-        top:156px;
+    @keyframes Background {
+    0% {
+        background-position: 0% 50%
     }
-
-    p.enviar{
-        margin-top: 15px;
+    50% {
+        background-position: 100% 50%
     }
-    
-    p.esqueci{
-        margin-top: 8px;
+    100% {
+        background-position: 0% 50%
     }
-    
-    p>input{
-        width: 300px;
-        height: 35px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+    section#login{
+        width: 80vw;
+        height: 290px;
+    }
+    section#login >div#imagem{
+        float: left;
+        width:35%;
+        height:100%;
+    }
+    section#login>div#formulario{
+        float:right;
+        width: 60%;
+    }
+}
+@media screen and (min-width: 993px){
+    section#login{
+        width: 950px;
+        height: 330px;
+    }
+    section#login>div#imagem{
+        float:right;
+        width:45%;
+        height: 100%;
+    }
+    section#login>div#formulario{
+        float:left;
+        width: 52%;
+    }
+    h1{
+        font-size: 2em;
+    }
+    p{
+        font-size: 1em;
+        margin:20px 0px
     }
 }
     
-
-
-@media screen and (min-width:901px) {
-
-    body{
-    background: linear-gradient(253deg, var(--cor02), var(--cor01));
-    background-size: 300% 300%;
-    -webkit-animation: Background 30s ease infinite;
-    }
-    
-    @-webkit-keyframes Background {
-        0% {
-        background-position: 0% 50%
-        }
-        50% {
-        background-position: 100% 50%
-        }
-        100% {
-        background-position: 0% 50%
-        }
-    }
-    
-    main{
-    height: 315px;
-    width:700px;
-    }
-
-    div.img{
-        display: none;
-    }
-
-    div.img2{
-        display: block;
-    }
-
-    div.img2>img{
-        width: 277px;
-        height: 313px;
-    }
-
-    div.img2{
-        width: 700px;
-        height: 100px;
-    }
-        
-    img{
-        display: relative;
-        left: 211px;
-        top: -313px;
-
-        border-radius: 0px 20px 20px 0px;
-        border-left: 2px solid var(--cor01);
-        border-bottom: 0px solid var(--cor01);
-    }
-    
-    section{
-        position: inline;
-    
-        width: 400px;
-        height: 284px;
-    
-        border-radius: 20px 0px 0px 20px;
-    }
-
-    form div{
-        margin-top: 10px;
-        padding: 10px 15px 10px 15px;
-    }
-
-    form div>input{
-        height: 40px;
-        width: 342px;
-        left: 60px;  
-        font-size: 1.3em;    
-    }
-    
-    div.icone-email>input{
-        top:114px;
-    }    
-    
-    div.icone-senha>input{
-        top:172px;
-    }
-
-    p.enviar{
-        margin-top: 10px;
-    }
-    
-    p.esqueci{
-        margin-top: 6px;
-    }
-    
-    p>input{
-        width: 400px;
-        height: 35px;
-    }
-    
-}    
-
-
